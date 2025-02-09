@@ -1,0 +1,318 @@
+@font-face {
+    src: url(fonts/Roboto/static/Roboto-Light.ttf);
+    font-family: Roboto-Light;
+}
+
+@font-face {
+    src: url(fonts/Raleway/static/Raleway-Regular.ttf);
+    font-family: Raleway;
+}
+
+@font-face {
+    src: url(fonts/Quicksand/static/Quicksand-Regular.ttf);
+    font-family: Quicksand;
+}
+
+@font-face {
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
+    font-family: Montserrat;
+}
+
+@font-face {
+    src: url(fonts/Montserrat/static/Montserrat-Light.ttf);
+    font-family: Montserrat-Light;
+}
+
+@font-face {
+    src: url(fonts/Baskervville/Baskervville-Regular.ttf);
+    font-family: Baskervville;
+}
+
+@font-face {
+    src: url(fonts/Merriweather/Merriweather-Light.ttf);
+    font-family: Merriweather-Light;
+}
+
+
+*{
+    box-sizing: border-box; /* This makes sure that padding and border are included in the element's total width and height */
+}
+
+body{
+    margin:0px;
+    background-color: rgb(243, 243, 244);
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width:100%;
+    z-index: 1000;
+}
+
+.navbar-container{
+    list-style-type: none;
+    margin: 0px;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 0px;
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-container .left{
+    flex: 1;
+}
+.navbar-container .center{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*margin: 0 auto;*/
+    
+    font-family: Montserrat-Light, Quicksand, Montserrat;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.dropdown{
+    margin-left: auto;
+    display: inline-block; /*para que no se seleccione todo el bloque*/
+} 
+
+.dropdown button{
+    background-color: transparent;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+
+    font-family: Montserrat-Light, Quicksand, Montserrat;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 7px;
+}
+.dropdown a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+.dropdown .content{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    min-width: 100px;
+    /*box-shadow: 2px 2px 5px rgb(155, 145, 145);*/
+    font-family: Montserrat-Light, Quicksand, Montserrat;
+    text-align: center;
+    padding-bottom: 7px;
+    right: 0px;
+    text-align: right;
+    color: black;
+}
+.dropdown:hover .content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta span{
+    padding-bottom: 7px;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding-right: 0px;
+    text-transform: uppercase;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.header-content {
+    /*font-family:  Baskervville, Quicksand, Montserrat-Light, Montserrat;*/
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(1rem, 3.4783vw + 0.3043rem, 3rem);
+    width: 100%;
+    padding: 20px;
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    line-height: 1.25em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.header-content p{
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+    font-size: 0.7em; 
+    font-weight: normal;
+    font-size: normal;
+}
+
+.text-content {
+    text-align: left;
+    flex: 1;
+    text-wrap: balance;
+    margin-right: 20px;
+}
+
+.image-content {
+    flex-shrink: 0;
+    width: auto; /* Ajustado para que la imagen ocupe el espacio necesario */
+    max-width: 50%; /* Ajustado para que la imagen no ocupe más del 50% del contenedor */
+}
+
+.image-content img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+@media (max-width: 600px) {
+    .text-content, .image-content {
+        max-width: 100%; /* Ajusta el ancho máximo al 100% en pantallas pequeñas */
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+    }
+    .text-content {
+        margin-bottom: 20px; /* Añade un margen inferior para separar el texto de la imagen */
+    }
+}
+
+.content{
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+    font-size: 1em; 
+    font-weight: normal;
+    font-size: normal;
+
+    width: 100%;
+    padding: 2%;
+}
+
+.content #section1{
+    letter-spacing: 2px;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat-Light, Quicksand, Montserrat;
+
+}
+
+.footer-container{
+    clear:both; /*clear a float*/
+    color: black;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-family: Montserrat-Light, Quicksand, Montserrat;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 0px;
+    padding-bottom: 7px;
+}
+
+
+
+.footer-container a{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat-Light, Quicksand, Montserrat;    
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 auto
+
+}
+
+/*
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active svg {
+    transform: scale(0.9);
+  }
+    */
+
+a > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    }
+
+/* icon style and hover */
+a svg {
+    position:relative;
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+  }
+  
+a:hover svg {
+    transform: translateY(-50%) rotate(-90deg);
+  }

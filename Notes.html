@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang = "en">  
+    <head> 
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_notes.css">
+    </head>
+    <body> 
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="left"></div>
+                <div class="center"> ANTONIA CISTERNAS</div>
+                <div class="dropdown">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Menu </span></button>
+                    <div class="content">
+                        <a class="cta" href="index.html">
+                            <span class="hover-underline-animation"> About </span></a>
+                        <a class="cta" href="Notes.html">
+                            <span class="hover-underline-animation"> Notes </span></a>
+                        <a class="cta" href="Research_exp.html">
+                            <span class="hover-underline-animation"> Research experience </span></a>
+                        
+                        <a class="cta" href="Schools.html">
+                            <span class="hover-underline-animation"> Schools and Seminars </span></a>
+                        <a class="cta" href="Personal_projects.html">
+                            <span class="hover-underline-animation"> Personal projects </span></a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+
+        <main>
+            <section class = "content">  
+                <h1 id="section1">Notes</h1>
+                <p>This page contains my notes from both lectures and auxiliary sessions for the courses I attended during my physics degree at the University of Chile. Some auxiliary class notes include pages that served as reference materials provided by the teaching assistant at the time, which I found useful for my studies.</p>
+            </section>
+            <section class="button-container">
+                <button class="button" onclick="toggleDisplay('5th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">5th semester</button>
+                <section class="semester" id="5th_semester" style="display: none;">
+                    <button class="course-button" onclick="toggleDisplay('Vibraciones')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Vibraciones y Ondas</button>
+                    <section class="types" id="Vibraciones" style="display: none;">
+                        <a class="type" href="Documentos/Vibraciones_y_ondas Compressed 2025-02-07 15_35_00.pdf" target = "_blank">Cátedra</a>
+                        <a class="type" href="Documentos/Auxiliar Vibras. 2025-02-08 20_16_28.pdf" target = "_blank">Auxiliar</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('Proba')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Probabilidades y estadística</button>
+                    <section class="types" id="Proba" style="display: none;">
+                        <a class="type" href="Documentos/Probabilidades Y Estadi╠üstica.pdf" target = "_blank">Cátedra</a>
+                        <a class="type" href="Documentos/Auxiliar Probabilidades Y Estadística 2025-02-08 18_36_05.pdf" target="_blank">Auxiliar</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('mmf')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Métodos matemáticos de la física</button>
+                    <section class="types" id="mmf" style="display: none;">
+                        <a class="type" href="Documentos/Me╠ütodos Matema╠üticos de la Fi╠üsica.pdf" target="_blank">Cátedra</a>
+                    </section>  
+                </section>
+
+                <button class="button" onclick="toggleDisplay('6th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">6th semester</button>
+                <section class="semester" id="6th_semester" style="display: none;">
+                    <button class="course-button" onclick="toggleDisplay('Electrodinámica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Electrodinámica</button>
+                    <section class="types" id="Electrodinámica" style="display: none;">
+                        <a class="type" href="Documentos/Electrodina╠ümica.pdf" target="_blank">Cátedra</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('Clásica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Mecánica clásica</button>
+                    <section class="types" id="Clásica" style="display: none;">
+                        <a class="type" href="Documentos/Mecánica Clásica 2025-02-08 20_08_33.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="Documentos/Aux. Meca╠ünica Cla╠üsica .pdf" target="_blank">Auxiliar</a>
+                    </section>
+                </section>
+                
+                <button class="button" onclick="toggleDisplay('7th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">7th semester</button>
+                <section class="semester" id="7th_semester" style="display: none;">
+                    <button class="course-button" onclick="toggleDisplay('RG')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Relatividad general</button>
+                    <section class="types" id="RG" style="display: none;">
+                        <a class="type" href="Documentos/Aux Relatividad General.pdf" target="_blank">Auxiliar</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('Cuántica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Mecánica cuántica</button>
+                    <section class="types" id="Cuántica" style="display: none;">
+                        <a class="type" href="Documentos/Cua╠üntica.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="Documentos/Aux Cua╠üntica.pdf" target="_blank">Auxiliar</a>
+                    </section>
+                </section>
+                
+                <button class="button" onclick="toggleDisplay('8th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">8th semester</button>
+                <section class="semester" id="8th_semester" style="display: none;">
+                    <button class="course-button" onclick="toggleDisplay('Cosmo')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Cosmología</button>
+                    <section class="types" id="Cosmo" style="display: none;">
+                        <a class="type" href="Documentos/Cosmologi╠üa.pdf" target="_blank">Cátedra</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('Mesta')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Mecánica estadística</button>
+                    <section class="types" id="Mesta" style="display: none;">
+                        <a class="type" href="Documentos/" target="_blank">Cátedra</a>
+                        <a class="type" href="Documentos/" target="_blank">Auxiliar</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('Sólidos')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Introducción a la física del sólido</button>
+                    <section class="types" id="Sólidos" style="display: none;">
+                        <a class="type" href="Documentos/" target="_blank">Cátedra</a>
+                        <a class="type" href="Documentos/" target="_blank">Auxiliar</a>
+                    </section>
+                </section>
+                
+                <button class="button" onclick="toggleDisplay('9th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">9th semester</button>
+                <section class="semester" id="9th_semester" style="display: none;">
+                </section>
+                
+                <script>
+                    function toggleDisplay(id) {
+                        var element = document.getElementById(id);
+                        if (element.style.display === "none") {
+                            element.style.display = "block";
+                        } else {
+                            element.style.display = "none";
+                        }
+                    }
+                </script>
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p>Contact</p>
+                <a href="mailto:antonia.cisternas@ug.uchile.cl"
+                target = "_blank" 
+                title = "Goes to Mail" 
+                class="cta">
+                    <span class="hover-underline-animation">antonia.cisternas@ug.uchile.cl
+                    <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="9"
+                    viewBox="15 0 46 16"
+                    >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                    </svg>
+                    </span>
+                </a>
+                <a href="https://github.com/antoniacisternas" 
+                target = "_blank" 
+                title = "Goes to Github" 
+                class="cta">
+                    <span class="hover-underline-animation">Github
+                    <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="10"
+                    viewBox="15 0 46 16"
+                    >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                    </svg>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/antonia-sofía-cisternas-belloni-48b21a2b0/" 
+                target = "_blank" 
+                title = "Goes to Linkedin" 
+                class="cta">
+                    <span class="hover-underline-animation">Linkedin
+                    <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="10"
+                    viewBox="15 0 46 16"
+                    >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                    </svg>
+                    </span>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

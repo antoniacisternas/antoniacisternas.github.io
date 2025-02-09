@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #023047;
+    --fg-color: #fcfcfc;
+}
+
+*{
+    box-sizing: border-box; /* This makes sure that padding and border are included in the element's total width and height */
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.post-container{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
+}
+
+.post{
+    background-color: #f9f9f9;
+    width:96%;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 1px 2px 5px 2px #b5bdd1;
+    display: flex;
+    column-gap: 1rem;
+    transition: box-shadow .2s ease-in-out;
+    margin: 2%;
+    margin-top: 1%;
+}
+
+.post:hover{
+    box-shadow: 1px 2px 8px 4px #b5bdd1;
+}
+
+.post-img{
+    min-width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    width: 150px;
+    text-align: center;
+    position:relative;
+    align-content: center;
+}
+
+.post-img img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform .2s ease-in-out;
+    transform-origin: center;
+    position: relative;
+    border-radius: .5rem;
+}
+
+.texto-img {
+    font-family: Montserrat-Light, Quicksand, Raleway, Montserrat;;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 20; 
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+}
+
+.post-img:hover img{
+    filter: brightness(0.7) saturate(0) blur(1.1px);
+}
+
+.post-img:hover .texto-img{
+    display: block;
+}
+.post-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.post-content > *{
+    width: 100%;
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-title h2{
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-bottom: 8px; 
+}
+.post-title p{
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.post-main{
+    line-height: 1.2rem;
+    -webkit-box-orient: vertical;
+    font-family: Quicksand, Montserrat-Light, Raleway, Montserrat;
+    font-size: 1em;
+    font-weight: normal;
+    font-size: normal;
+}
