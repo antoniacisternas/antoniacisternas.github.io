@@ -72,14 +72,21 @@
 
                 <button class="button" onclick="toggleDisplay('6th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">6th semester</button>
                 <section class="semester" id="6th_semester" style="display: none;">
-                    <button class="course-button" onclick="toggleDisplay('Electrodinámica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Electrodinámica</button>
+                    <button class="course-button" onclick="toggleDisplay('Electrodinámica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Electrodinámica</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Gonzalo Palma</div>
+                        <div style="font-size: 0.9em; color: gray;">Assistant Francisco Colipí</div></button>
                     <section class="types" id="Electrodinámica" style="display: none;">
-                        <a class="type" href="Documentos/Electrodina╠ümica.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="6to semestre/Electrodinamica-1-65.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="6to semestre/Electrodinamica-65-129.pdf" target="_blank">Cátedra II</a>
                     </section>
-                    <button class="course-button" onclick="toggleDisplay('Clásica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">Mecánica clásica</button>
+                    <button class="course-button" onclick="toggleDisplay('Clásica')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Mecánica clásica</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Gonzalo Palma</div>
+                        <div style="font-size: 0.9em; color: gray;">Assistant Gabriel Marín</div></button>
                     <section class="types" id="Clásica" style="display: none;">
-                        <a class="type" href="Documentos/Mecánica Clásica 2025-02-08 20_08_33.pdf" target="_blank">Cátedra</a>
-                        <a class="type" href="Documentos/Aux. Meca╠ünica Cla╠üsica .pdf" target="_blank">Auxiliar</a>
+                        <a class="type" href="6to semestre/Mecánica Clásica 2025-02-08 20_08_33.pdf" target="_blank">Cátedra</a>
+                        <a class="type" href="6to semestre/Aux. Mecanica Clasica.pdf" target="_blank">Auxiliar</a>
                     </section>
                 </section>
                 
@@ -113,11 +120,6 @@
                         <a class="type" href="Documentos/" target="_blank">Auxiliar</a>
                     </section>
                 </section>
-                
-                <button class="button" onclick="toggleDisplay('9th_semester')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">9th semester</button>
-                <section class="semester" id="9th_semester" style="display: none;">
-                </section>
-                
                 <script>
                     function toggleDisplay(id) {
                         var element = document.getElementById(id);
