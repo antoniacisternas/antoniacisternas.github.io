@@ -41,6 +41,9 @@
 body{
     margin:0px;
     background-color: rgb(243, 243, 244);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .navbar{
     position: sticky;
@@ -315,4 +318,5 @@ a svg {
   
 a:hover svg {
     transform: translateY(-50%) rotate(-90deg);
+
   }
