@@ -142,8 +142,27 @@
                     <section class="types" id="QFT" style="display: none;">
                         <a class="type" href="8vo semestre/QFT.pdf" target="_blank">Cátedra</a>
                     </section>
-                    
                 </section>
+
+                <button class="button" onclick="toggleDisplay('Master_1')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">Master's degree: 1st semester</button>
+                <section class="semester" id="Master_1" style="display: none;">
+                    <button class="course-button" onclick="toggleDisplay('CuanticaII')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Mecánica cuántica II</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Rodrigo Arias</div>
+                        <div style="font-size: 0.9em; color: gray;">Assistant Diego Bautista</div></button>
+                    <section class="types" id="CuanticaII" style="display: none;">
+                        <a class="type" href="8vo semestre/Cosmologia-1-30_compressed.pdf" target="_blank">Cátedra I</a>
+                        <a class="type" href="8vo semestre/Cosmologia-30-50.pdf" target="_blank">Cátedra II</a>
+                        <a class="type" href="8vo semestre/Cosmologia-50-75.pdf" target="_blank">Cátedra III</a>
+                    </section>
+                    <button class="course-button" onclick="toggleDisplay('SeminarioI')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Seminario de Investigación</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Pablo Moya</div>
+                    <section class="types" id="Seminario" style="display: none;">
+                        <a class="type" href="Master_1/Cosmological Parity Violation-Seminario (1).pdf" target="_blank">Presentación final proyecto de investigación</a>
+                    </section>
+                </section>
+                
                 <script>
                     function toggleDisplay(id) {
                         var element = document.getElementById(id);
@@ -228,5 +247,6 @@
         </footer>
     </body>
 </html>
+
 
 
