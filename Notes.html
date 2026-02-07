@@ -144,8 +144,8 @@
                     </section>
                 </section>
 
-                <button class="button" onclick="toggleDisplay('Master_1')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">Master's degree: 1st semester</button>
-                <section class="semester" id="Master_1" style="display: none;">
+                <button class="button" onclick="toggleDisplay('Master')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">Master's degree</button>
+                <section class="semester" id="Master" style="display: none;">
                     <button class="course-button" onclick="toggleDisplay('CuanticaII')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
                         <div><strong>Mecánica cuántica II</strong></div>
                         <div style="font-size: 0.9em; color: gray;">Prof. Rodrigo Arias</div>
@@ -162,7 +162,24 @@
                         <a class="type" href="Master_1/Cosmological Parity Violation-Seminario (1).pdf" target="_blank">Presentación final proyecto de investigación</a>
                     </section>
                 </section>
-                
+
+                <section class = "content">  
+                    <h1 id="section1">Teaching Assistant Classes</h1>
+                    <p>This section contains materials from the classes I have taught for various courses.</p>
+                </section>
+                    <section class="button-container">
+                <button class="button" onclick="toggleDisplay('Electro_2025')" style="background-color: rgb(255, 255, 255); color: rgb(11, 47, 164); border-radius: 5px; border: none">
+                    <div><strong>Electromagnetismo 2025</strong></div>
+                    <div style="font-size: 0.9em; color: gray;">Prof. Domenico Sapone</div></button>
+                <section class="semester" id="Electro_2025" style="display: none;">
+                    <!--<button class="course-button" onclick="toggleDisplay('Auxiliares')" style="background-color: rgb(255, 255, 255); border-radius: 5px; border: none">
+                        <div><strong>Vibraciones y ondas</strong></div>
+                        <div style="font-size: 0.9em; color: gray;">Prof. Rodrigo Vicencio</div>
+                        <div style="font-size: 0.9em; color: gray;">Assistant Paloma Vildoso</div></button>-->
+                    <section class="types" id="Vibraciones" style="display: none;">
+                        <a class="type" href="" target = "_blank">Auxiliares</a>
+                    </section>
+                </section>
                 <script>
                     function toggleDisplay(id) {
                         var element = document.getElementById(id);
@@ -247,6 +264,7 @@
         </footer>
     </body>
 </html>
+
 
 
 
