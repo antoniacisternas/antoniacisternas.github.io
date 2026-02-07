@@ -34,7 +34,6 @@ body{
     display: flex;
     column-gap: 1rem;
     transition: box-shadow .2s ease-in-out;
-    margin-top: 1%;
     max-width: 100%;
 }
 
@@ -123,6 +122,7 @@ body{
     font-size: normal;
 
 }
+
 
 
 
