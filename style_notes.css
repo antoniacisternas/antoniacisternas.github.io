@@ -1,3 +1,10 @@
+.section-content{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+}
+
 .button-container{
     display:flex;
     flex-direction: column;    
@@ -72,5 +79,6 @@
     margin: 10px auto;
     width: 60%;
 }
+
 
 
